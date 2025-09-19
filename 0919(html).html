@@ -7,19 +7,30 @@
     <script>
         // TODO: Add hello code
         function getMessage(name) {
-            return 'Hello, ' + name + '...';
+            return `Hello, ${name}...`
         }
+
         const message = getMessage('Ornella');
         document.write(message);
 
         // TODO: Add setTimeout code
-        function displayDone() {
-            console.log('Done!');
-        }
-        
-        setTimeout(displayDone(), 3000); // 즉시 실행
-        setTimeout(displayDone, 3000); // 3초후 실행
+        const messages =
+        [
+            "I am Marestell.",
+            "I want to be a programmer.",
+            "Wanna join me?"
+        ];
 
+        let i = 0;
+        const interval = setInterval(
+            () => {document.write((i ? "<br>" : "") + messages[i]); // 줄바꿈 처리
+                    i++;
+                    if (i >= messages.length) {
+                        clearInterval(interval); // 3개 출력 후 멈춤
+                    }
+            },
+        3000
+        );
     </script>
 </body>
 </html>
