@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message</title>
+</head>
+<body>
+    <script>
+        // TODO: Add hello code
+        function getMessage(name) {
+            return 'Hello, ' + name + '...';
+        }
+        const message = getMessage('Ornella');
+        document.write(message);
+
+        // TODO: Add setTimeout code
+        function displayDone() {
+            console.log('Done!');
+        }
+        
+        setTimeout(displayDone(), 3000); // 즉시 실행
+        setTimeout(displayDone, 3000); // 3초후 실행
+
+    </script>
+</body>
+</html>
