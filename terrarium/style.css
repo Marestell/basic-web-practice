@@ -1,0 +1,106 @@
+h1 {
+    color: green;
+    text-align: center;
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+}
+
+#left-container {
+    left: 0px;
+}
+
+#right-container {
+    right: 0px;
+}
+
+.container {
+    background-color: #eee;
+    width: 15%;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+}
+
+.plant-holder {
+    position: relative;
+    height: 13%;
+}
+
+.plant {
+    position: absolute;
+    max-width: 120%;
+    max-height: 120%;
+    z-index: 2;
+}
+
+.jar-walls {
+    height: 80%;
+    width: 60%;
+    background: #d1e1df;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.jar-top {
+    width: 50%;
+    height: 5%;
+    background: #d1e1df;
+    position: absolute;
+    bottom: 85%;
+    left: 25%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.jar-bottom {
+    width: 50%;
+    height: 3%;
+    background: #d1e1df;
+    position: absolute;
+    bottom: 2%;
+    left: 25%;
+    opacity: 0.7;
+}
+
+.dirt {
+    width: 60%;
+    height: 5%;
+    background: #5a3a1e;
+    position: absolute;
+    border-radius: 0 0 1rem 1rem;
+    bottom: 5%;
+    left: 20%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.jar-glossy-long {
+    height: 25%;
+    width: 5%;
+    background: #eee;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    z-index: 3;
+}
+
+.jar-glossy-short{
+    height: 10%;
+    width: 5%;
+    background: #eee;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    z-index: 3;
+}
+
+
