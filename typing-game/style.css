@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #f7faf8;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Arial, sans-serif;
+}
+
+#app {
+  width: min(720px, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  color: #1b5e20;
+  letter-spacing: 0.5px;
+}
+
+.intro {
+  background: #e8f5e9;
+  border: 2px solid #2e7d32;
+  color: #1b5e20;
+  border-radius: 12px;
+  padding: 12px 16px;
+  line-height: 1.6;
+}
+
+#quote {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#start {
+  order: 0;                         
+  background: #2e7d32;            
+  color: #fff;                    
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#start:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#typed-value {
+  order: 1;                   
+  width: 100%;
+  max-width: 480px;
+  background: #fff;               
+  border: 2px solid #cfd8dc;         
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 1rem;
+}
+
+#typed-value:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px #e8f5e9;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.error {
+    background-color: lightcoral;
+    border: red;
+}
+
+.input-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.input-wrap #typed-value {
+  width: 100%;
+  max-width: 480px;
+  height: 40px;
+  background: #fff;
+  border: 2px solid #cfd8dc;
+  border-radius: 10px;
+  padding: 8px 12px 8px 40px;/
+  font-size: 1rem;
+}
+.input-wrap #typed-value:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px #e8f5e9;
+}
+
+.input-wrap .fa-keyboard {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2e7d32; 
+  font-size: 1.1rem;
+  pointer-events: none;
+}

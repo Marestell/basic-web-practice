@@ -1,4 +1,4 @@
-let playerCard = [7, 5, 7, 2];
+let playerCard = [7, 5, 9, 2];
 let playerSum = playerCard[0] + playerCard[1];
 
 let bankCard = [7, 5, 6, 4];
