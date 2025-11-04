@@ -46,6 +46,7 @@ body {
     left: 20%;
     opacity: 0.5;
     z-index: 1;
+    pointer-events: none;
 }
 
 .jar-top {
@@ -103,4 +104,11 @@ body {
     z-index: 3;
 }
 
+:root { --plant-in-jar-scale: 0.25; }
 
+.plant.in-jar {
+  transform: scale(var(--plant-in-jar-scale));
+  transform-origin: top left; /* 축소해도 좌상단 고정 → 좌표가 틀어지지 않음 */
+  user-select: none;
+  -webkit-user-drag: none;
+}
