@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css">
     <title>My Carbon Trigger</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="container">
-    <img alt="plants and people" src="images/plants-people.png" class="img" />
+    <img alt="plants and people" src="images/plants-people.png" />
     <div>
         <h1>Welcome to Your Personal Carbon Trigger!</h1>
     </div>
@@ -24,7 +24,7 @@
             <label for="api">Your API Key from tmrow</label>
             <input type="text" id="api" required class="api-key" />
         </div>
-        <button class="search-btn">Submit</button>
+        <button type="submit" class="search-btn">Submit</button>
     </form>
     <div class="result">
         <div class="loading">loading...</div>
@@ -37,6 +37,6 @@
         </div>
         <button class="clear-btn">Change region</button>
     </div>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </body>
 </html>

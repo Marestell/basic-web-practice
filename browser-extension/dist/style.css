@@ -11,89 +11,118 @@ input[type='text'],input[type='password'],input[type='submit'],input[type='searc
 input[type='button'],input[type='reset']{-webkit-appearance:none;border-radius:0}
 input[type='search']::-webkit-search-cancel-button{-webkit-appearance:none}
 body{background:#fff}
-body,th,td,input,select,textarea,button{font-size:14px;line-height:1.5;font-family:'Malgun Gothic','맑은 고딕',sans-serif;color:#333}
+body,th,td,input,select,textarea,button{font-size:14px;line-height:1.5;font-family:'Malgun Gothic','맑은 고딕',sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
 a{color:#333;text-decoration:none}
 a:active, a:hover{text-decoration:none}
 address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 
-.img{
-    width: 305px;
-    height: 190px;
+body {
+    padding: 10px;
+}
+
+img[alt="plants and people"]{
     display: block;
     margin: 12px auto;
+    width: 300px;
+    height: auto;
+    max-width: none;
 }
 
-body.container{
+h1 {
+    text-align: center;
+    margin: 8px 8px;
+    font-size: 21px;
+    font-weight: 600; 
+}
+
+h2 {
+    text-align: center;
+    margin: 8px 8px;
+    font-size: 21px; 
+    font-weight: 600; 
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.form-data > div {
     display: flex;
     flex-direction: column;
+    gap: 6px;
+    margin: 10px 0;
     align-items: center;
-    padding: 25px; box-sizing: border-box;
 }
 
-h1{
+.form-data label {
     text-align: center;
-    font-size: 21px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 900;
 }
 
-.form-data{
+.form-data input[type="text"] {
+    width: 40%;             
+    padding: 10px 12px;   
+    border: 0;             
+    border-radius: 10px; 
+    background: lightgray;      
+    font-size: 14px;
+    line-height: 1.4;
+    color: black;
     text-align: center;
+    transition: box-shadow .15s ease, background .15s;
 }
 
-h2{
-    font-size: 20px;
-    margin-bottom: 10px;
+.form-data input[type="text"]:focus {
+    outline: none;
+    background: white;
+    box-shadow: 0 0 0 2px skyblue;
 }
 
-.result{
-    text-align: center;
-}
+.form-data input::placeholder { color: lightgray; }
 
-#region, #api {
-    order: 1;                   
-    width: 60%;
-    max-width: 480px;
-    background: #eeeeee;               
-    border: 2px solid #eeeeee;         
-    border-radius: 10px;
-    padding: 10px 12px;
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-
-.form-data label[for="region"],
-.form-data label[for="api"]{
-    display: block;
-    font-weight: 1000;
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
-
-.search-btn {
-    margin-top: 10px;
-    order: 0;                         
-    background: #3c74da;            
-    color: #fff;                    
-    border: none;
-    padding: 10px 10px;
-    border-radius: 10px;
+.form-data button {
+    align-self: center;
+    background: #2563eb;     
+    color: #fff;             
+    border: 0;                
+    border-radius: 10px;      
+    padding: 10px 16px;       
+    font-size: 14px;          
+    font-weight: 700;
     cursor: pointer;
-    font-weight: 600;
+    margin-top: 12px;
 }
 
-
-.result { 
-    display: none;
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .loading {
-    display: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
 }
 
-@media (prefers-color-scheme: dark) {
-    html, body{
-        background: #0f1115;
-        color: #e6e6e6;
-    }
+.result button {
+    align-self: center;
+    background: #2563eb;     
+    color: #fff;             
+    border: 0;                
+    border-radius: 10px;      
+    padding: 10px 16px;       
+    font-size: 14px;          
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.result-container > p {
+  margin-top: 10px;              
 }
